@@ -30,14 +30,14 @@ public class MinDiff {
     // Do not modify above this line
     public static int minDiff(int[] stones) {
         int smallestSoFar = Integer.MAX_VALUE; // make it the biggest integer 
-        for(int i = 0; i < stones.length - 1; i++)  {
-            int currentDiff = Math.abs(stones[i] - stones[i+1]);
-            if (currentDiff < smallestSoFar) {
+        for(int i = 0; i < stones.length - 1; i++)  { // set up a for loop that will iterate through the array stones
+            int currentDiff = Math.abs(stones[i] - stones[i+1]); // set up an integer that tries to find the smallest value
+            if (currentDiff < smallestSoFar) { // if the current difference is less than the smallest one found so far...
                 //update variables
-                smallestSoFar = currentDiff;
+                smallestSoFar = currentDiff; // make the current difference the smallest
             }
 
         }
-        return smallestSoFar;
+        return smallestSoFar; // at the end of the for loop, return smallest difference found
     }
 }
