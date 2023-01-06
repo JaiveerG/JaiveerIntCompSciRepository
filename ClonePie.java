@@ -22,7 +22,7 @@ public class ClonePie {
     // inserting a copy of the yummiest pie at the end of the list 
     static void cloneYummiestPie(ArrayList<Pie> pies) {
         // set up a for loop to iterate through the array
-        double maxYumminess = 0.0;
+        double maxYumminess = pies.get(0);
         Pie yummiestPie = null;
         for (int i = 0; i < pies.size(); i++) {
             Pie p = pies.get(i);
