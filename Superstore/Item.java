@@ -19,4 +19,16 @@ public class Item {
         Random rand = new Random();
         return rand.nextInt(salePriceMax - salePriceMin + 1) + salePriceMin;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getCategory() {
+        return this.category;
+    }
+
+    public int getPrice() {
+        return this.price;
+    }
 }
