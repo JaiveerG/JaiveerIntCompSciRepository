@@ -1,11 +1,11 @@
 import java.util.Random;
 
 public class Item {
-    private String category;
-    private String name;
-    private int price;
-    private int salePriceMin;
-    private int salePriceMax;
+    String category;
+    String name;
+    int price;
+    int salePriceMin;
+    int salePriceMax;
 
     public Item(String category, String name, int price, int salePriceMin, int salePriceMax) {
         this.category = category;
